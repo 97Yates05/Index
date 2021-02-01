@@ -1,0 +1,139 @@
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #454d64;
+  @font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  @font-face {
+    font-family: myFirstFont;
+    src: url('../public/FZDouNTJ_Cu.OTF');
+  }
+}
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.logo span {
+  display: inline-block;
+  font-family: 'myFirstFont';
+}
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 25vw;
+  height: 25vw;
+  margin: auto;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+}
+.menu svg {
+  transition: transform 750ms;
+}
+.menu svg:hover {
+  transform: scale(1.2);
+}
+.list {
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+}
+.list div {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px #fff solid;
+  border-radius: 5px;
+}
+.list a {
+  color: white;
+}
+.content {
+  width: 50vw;
+  height: 50vw;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .content {
+    width: 100vw;
+    height: 100vw;
+  }
+  .img {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+.circle {
+  stroke-dasharray: calc(6.28 * 40%);
+  stroke-dashoffset: calc(6.28 * 40%);
+}
+.rotate {
+  stroke-dasharray: calc(6.28 * 40%);
+  stroke-dashoffset: calc(6.28 * 40%);
+  transform: rotate(0.5turn);
+  transform-origin: center;
+}
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 1000;
+}
+.mask {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.drawerContent {
+  position: absolute;
+  top: 18vh;
+  right: 0;
+  bottom: 18vh;
+  width: 365px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  transition: all 250ms;
+}
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.title {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.listTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
