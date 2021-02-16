@@ -16,8 +16,12 @@ pipeline {
     }
     stage('构建镜像') {
       steps {
-        sh 'ls'
         sh 'docker build -t personal/website .'
+      }
+    }
+    stage('部署镜像') {
+      steps {
+        sh 'docker run -p 80:80 -d personal/website'
       }
     }
   }
