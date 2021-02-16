@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('安装依赖') {
       steps {
-        sh 'npm install'
+        sh 'npm config set registry https://registry.npm.taobao.org && npm install'
       }
     }
     stage('打包') {
