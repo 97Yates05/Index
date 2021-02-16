@@ -7,9 +7,10 @@ pipeline {
 
   }
   stages {
-    stage('Build') {
+    stage('安装依赖并构建') {
       steps {
         sh 'npm install'
+        sh 'ls'
       }
     }
 
