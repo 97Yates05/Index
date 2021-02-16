@@ -12,6 +12,7 @@ pipeline {
     stage('构建镜像') {
       steps {
         sh 'printenv'
+        sh 'docker ps'
       }
     }
   }
