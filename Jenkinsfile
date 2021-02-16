@@ -1,10 +1,22 @@
 pipeline {
   agent any
+  tools {
+    nodejs 'nodejs'
+  }
   stages {
+    stage('安装依赖') {
+      steps {
+        sh 'npm install'
+      }
+    }
+    stage('打包') {
+      steps {
+        sh 'npm build'
+      }
+    }
     stage('构建镜像') {
       steps {
-        sh 'printenv'
-        sh 'docker ps'
+        sh 'docker build -t test .'
       }
     }
   }
