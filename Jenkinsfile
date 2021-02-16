@@ -11,9 +11,7 @@ pipeline {
       }
     }
     stage('构建镜像') {
-      agent {
-        agent { dockerfile true }
-      }
+      agent { dockerfile true }
       steps {
         echo '构建镜像'
       }
