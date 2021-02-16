@@ -11,7 +11,7 @@ pipeline {
         script{
           env.PATH = "/usr/bin:${env.PATH}" //添加了系统环境变量上
         }
-        sh 'sudo /usr/bin/docker build -t test .'
+        sh 'docker build -t test .'
       }
     }
   }
