@@ -11,11 +11,6 @@ pipeline {
         sh 'npm run build'
       }
     }
-    stage('构建镜像') {
-      steps {
-        docker.build("test")
-      }
-    }
   }
   post {
       always {
