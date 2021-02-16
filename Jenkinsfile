@@ -2,7 +2,6 @@ pipeline {
   agent {
     docker {
       image 'node:lts-alpine3.13'
-      args '-v /var/run/docker.sock:/var/run/docker.sock'
     }
   }
   stages {
@@ -10,7 +9,7 @@ pipeline {
       steps {
         echo '构建镜像'
         sh 'ls'
-        sh 'docker build -t test .'
+        sh '/usr/local/bin/docker build -t test .'
       }
     }
   }
