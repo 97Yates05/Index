@@ -6,7 +6,7 @@ pipeline {
     }
   }
   tools {
-    docker 'docker'
+    dockerTool 'docker'
   }
   stages {
     stage('构建镜像') {
