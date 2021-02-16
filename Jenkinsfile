@@ -8,6 +8,9 @@ pipeline {
     stage('构建镜像') {
       steps {
         echo '构建镜像'
+        script{
+          env.PATH = "/usr/bin:${env.PATH}" //添加了系统环境变量上
+        }
         sh 'sudo /usr/bin/docker build -t test .'
       }
     }
