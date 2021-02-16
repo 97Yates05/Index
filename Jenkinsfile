@@ -5,15 +5,13 @@ pipeline {
       args '-v /var/run/docker.sock:/var/run/docker.sock'
     }
   }
+  tools {
+    docker 'docker'
+  }
   stages {
     stage('构建镜像') {
       steps {
-        echo '构建镜像'
-        script{
-          def dockerPath = tool 'docker' //全局配置里的docker
-          env.PATH = "${dockerPath}/bin:${env.PATH}" //添加了系统环境变量上
-        }
-        sh 'docker build -t test .'
+        sh 'printenv'
       }
     }
   }
