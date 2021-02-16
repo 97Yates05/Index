@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('安装依赖并打包') {
       agent {
-        docker { image 'node:lts-alpine3.13' }
+        docker {
+          image 'node:lts-alpine3.13'
+          label 'my-defined-label'
+        }
       }
       steps {
         sh 'npm install'
@@ -11,7 +14,9 @@ pipeline {
       }
     }
     stage('查看当前目录') {
-      agent any
+      agent {
+        label 'my-defined-label'
+      }
       steps {
         sh 'ls'
       }
