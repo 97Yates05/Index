@@ -17,7 +17,7 @@ pipeline {
     stage('构建镜像') {
       steps {
         sh 'ls'
-        sh 'docker build -t PersonalWebsite .'
+        sh 'docker build -t personal/website .'
       }
     }
   }
