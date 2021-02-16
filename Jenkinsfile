@@ -16,6 +16,7 @@ pipeline {
     }
     stage('构建镜像') {
       steps {
+        sh 'ls'
         sh 'docker build -t test .'
       }
     }
