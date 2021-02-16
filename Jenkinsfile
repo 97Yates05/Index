@@ -1,9 +1,4 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:lts-alpine3.13'
-    }
-  }
   stages {
     stage('安装依赖并打包') {
       steps {
