@@ -1,10 +1,4 @@
 pipeline {
-  agent {
-    docker {
-      image 'node:lts-alpine3.13'
-      args '-v /var/run/docker.sock:/var/run/docker.sock'
-    }
-  }
   tools {
     dockerTool 'docker'
   }
