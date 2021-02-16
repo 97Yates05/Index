@@ -1,8 +1,5 @@
 pipeline {
   agent any
-  tools {
-    dockerTool 'docker'
-  }
   stages {
     stage('构建镜像') {
       steps {
