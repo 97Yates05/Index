@@ -11,7 +11,7 @@ pipeline {
     }
     stage('打包') {
       steps {
-        sh 'npm build'
+        sh 'npm run build'
       }
     }
     stage('构建镜像') {
