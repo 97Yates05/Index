@@ -8,7 +8,7 @@ pipeline {
     stage('构建镜像') {
       steps {
         echo '构建镜像'
-        sh '/usr/bin/docker build -t test .'
+        sh 'sudo /usr/bin/docker build -t test .'
       }
     }
   }
