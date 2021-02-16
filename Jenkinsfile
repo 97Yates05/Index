@@ -2,19 +2,13 @@ pipeline {
   agent {
     docker {
       image 'node:lts-alpine3.13'
-      args '-v /var/run/docker.sock:/var/run/docker.sock'
+      args '-v /var/run/docker.sock:/var/run/docker.sock \'
     }
   }
   stages {
-    stage('安装依赖') {
-      steps {
-        sh 'npm install'
-      }
-    }
     stage('构建镜像') {
       steps {
         echo '构建镜像'
-        sh 'npm run build'
         sh 'ls'
         sh 'docker build -t test .'
       }
