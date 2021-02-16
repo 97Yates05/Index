@@ -11,7 +11,7 @@ pipeline {
       }
     }
     stage('查看当前目录') {
-      agent none
+      agent any
       steps {
         sh 'ls'
       }
