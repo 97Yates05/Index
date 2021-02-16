@@ -10,6 +10,11 @@ pipeline {
         sh 'npm run build'
       }
     }
+    stage('查看当前目录') {
+      steps {
+        sh 'ls'
+      }
+    }
     stage('构建镜像') {
       agent { dockerfile true }
       steps {
