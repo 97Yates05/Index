@@ -6,6 +6,7 @@ pipeline {
   }
   stages {
     stage('构建镜像') {
+      docker.build("test")
       steps {
         echo '构建镜像'
         sh 'ls'
