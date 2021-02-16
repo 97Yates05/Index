@@ -1,4 +1,5 @@
 pipeline {
+  agent any
   stages {
     stage('安装依赖并打包') {
       steps {
