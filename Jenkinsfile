@@ -21,7 +21,7 @@ pipeline {
     }
     stage('部署镜像') {
       steps {
-        sh 'docker run -p 80:80 -d personal/website'
+        sh 'docker run --net=host --name=PersonalWebsite -d personal/website'
       }
     }
   }
