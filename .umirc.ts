@@ -1,6 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  exportStatic: {},
   nodeModulesTransform: {
     type: 'none',
   },
@@ -11,5 +12,5 @@ export default defineConfig({
       .test(/.(woff|eot|woff2|TTF|OTF)$/)
       .use('file-loader')
       .loader('file-loader');
-  }
+  },
 });
