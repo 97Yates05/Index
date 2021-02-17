@@ -21,7 +21,7 @@ pipeline {
     }
     stage('部署镜像') {
       steps {
-        sh 'docker image rm -f PersonalWebsite'
+        sh 'docker container rm -f PersonalWebsite'
         sh 'docker run --net=host --name=PersonalWebsite -d personal/website -c'
       }
     }
