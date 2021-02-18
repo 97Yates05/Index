@@ -22,7 +22,7 @@ pipeline {
     stage('部署镜像') {
       steps {
         sh 'docker container rm -f Index'
-        sh 'docker run --net=website --name=Index -p 80:80 -d personal/website'
+        sh 'docker run --net=website --name=Index --restart=always -p 80:80 -d personal/website'
       }
     }
   }
