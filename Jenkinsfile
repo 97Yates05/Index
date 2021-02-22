@@ -25,6 +25,11 @@ pipeline {
         sh 'docker run --net=website --name=Index --restart=always -p 80:80 -d personal/index-fe'
       }
     }
+    stage('删除虚悬镜像') {
+      steps {
+        sh 'docker image prune -f'
+      }
+    }
   }
   post {
       always {
