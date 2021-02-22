@@ -21,6 +21,8 @@ export default () => {
         <li>了解网络通信基本原理</li>
         <li>了解Node.js和Webpack</li>
         <li>了解基本的算法和数据结构</li>
+        <li>了解Graphql和Dgraph</li>
+        <li>了解Docker和Jenkins</li>
         <li>中国大学生服务外包大赛二等奖</li>
         <li>英语四六级合格</li>
         <li>院级优秀志愿者</li>
