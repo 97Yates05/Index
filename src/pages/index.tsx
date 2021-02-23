@@ -197,7 +197,7 @@ export default () => {
         >
           <div className={styles.title}>网站详情</div>
           <div>
-            本网站使用React开发，为其他个人开发网站的导航站，目前有在线音乐(Vue开发)和个人博客(Typecho博客系统)两个网站。
+            本网站使用React开发，为其他个人开发网站的导航站，目前有在线音乐(基于Vue开发)和个人博客(基于React开发)两个网站。
           </div>
           <div className={styles.title}>导航列表</div>
           <div style={{ marginBottom: 10 }}>
@@ -210,7 +210,12 @@ export default () => {
             <span className={styles.listTitle}>在线音乐</span>
           </div>
           <div>
-            基于网易云音乐API，使用Vue开发的SPA应用，仿照mac网易云音乐客户端实现了部分功能
+            在线音乐应用，仿照mac网易云音乐客户端实现了部分功能（后期考虑重构）。前端基于Vue，采用Vue
+            Cli集成路由、状态管理等功能;后端基于开源
+            <a href="https://github.com/Binaryify/NeteaseCloudMusicApi">
+              网易云音乐API库
+            </a>
+            实现。
           </div>
           <div style={{ marginTop: 20, marginBottom: 10 }}>
             <img
@@ -221,7 +226,9 @@ export default () => {
             />
             <span className={styles.listTitle}>个人博客</span>
           </div>
-          <div>Typecho部署的个人博客，前台主题基于handsome</div>
+          <div>
+            个人博客应用，目前还处于迭代中。前端基于React，采用Next.js集成路由配置、打包等功能；后端采用Dgraph图数据库，配合图形化查询语言graphql。
+          </div>
         </div>
       </div>
     </div>

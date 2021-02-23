@@ -14,7 +14,7 @@ export default () => {
       </div>
       <ul className={styles.list}>
         <li>熟练掌握JavaScript</li>
-        <li>熟练使用JS框架React</li>
+        <li>熟练使用React框架</li>
         <li>熟练使用HTML和CSS</li>
         <li>熟悉TypeScript的使用</li>
         <li>熟悉CSS框架Antd、Element</li>
@@ -35,7 +35,18 @@ export default () => {
           个人网站
         </span>
       </div>
-      <a href="https://yangchenhui.xin">https://yangchenhui.xin</a>
+      <div>
+        主站：
+        <a href="https://yangchenhui.xin">yangchenhui.xin</a>
+      </div>
+      <div>
+        博客：
+        <a href="https://blog.yangchenhui.xin">blog.yangchenhui.xin</a>
+      </div>
+      <div>
+        音乐：
+        <a href="https://music.yangchenhui.xin">music.yangchenhui.xin</a>
+      </div>
     </div>
   );
 };
