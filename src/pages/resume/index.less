@@ -10,6 +10,29 @@
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
 }
+.locale {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+@media print {
+  .locale {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .locale {
+    top: 10px;
+    right: 0;
+  }
+}
+.lang {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
 .content {
   flex: 3;
   display: flex;

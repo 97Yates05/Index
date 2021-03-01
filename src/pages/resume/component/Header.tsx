@@ -1,15 +1,21 @@
 import React from 'react';
+import { useIntl } from 'umi';
 import styles from './Header.less';
 
 export default () => {
+  const intl = useIntl();
   return (
     <div className={styles.main}>
       <div className={styles.left}>
         <div className="font" style={{ fontSize: 30 }}>
-          杨晨辉
+          {intl.formatMessage({
+            id: 'name',
+          })}
         </div>
         <div style={{ fontSize: 12 }}>
-          做你喜欢的事情，任何时候都不会太迟
+          {intl.formatMessage({
+            id: 'motto',
+          })}
         </div>
       </div>
       <div className={styles.right}>
@@ -17,7 +23,11 @@ export default () => {
           <svg className="icon" aria-hidden="true">
             <use href="#icon-frontend" />
           </svg>
-          <span className={styles.info}>前端开发工程师</span>
+          <span className={styles.info}>
+            {intl.formatMessage({
+              id: 'career',
+            })}
+          </span>
         </div>
         <div>
           <svg className="icon" aria-hidden="true">
@@ -35,7 +45,11 @@ export default () => {
           <svg className="icon" aria-hidden="true">
             <use href="#icon-address" />
           </svg>
-          <span className={styles.info}>北京市海淀区西土城路10号</span>
+          <span className={styles.info}>
+            {intl.formatMessage({
+              id: 'address',
+            })}
+          </span>
         </div>
       </div>
     </div>

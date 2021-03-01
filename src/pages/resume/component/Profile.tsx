@@ -1,6 +1,8 @@
 import React from 'react';
+import { useIntl } from 'umi';
 import styles from './Profile.less';
 export default () => {
+  const intl = useIntl();
   return (
     <div className={styles.main}>
       <div>
@@ -8,13 +10,23 @@ export default () => {
           <use href="#icon-profile" />
         </svg>
         <span className="font" style={{ marginLeft: 10, fontSize: 18 }}>
-          自我介绍
+          {intl.formatMessage({
+            id: 'profile',
+          })}
         </span>
       </div>
       <div className={styles.content}>
-        兴趣是最好的老师，喜欢看书，善于利用网络学习并加以应用；<br/>
-        较强的执行力和抗压能力，能完成好自己的本职工作；<br />
-        关注前端前沿技术，有组件化的思想，良好的代码风格。
+        {intl.formatMessage({
+          id: 'profileContent1',
+        })}
+        <br />
+        {intl.formatMessage({
+          id: 'profileContent2',
+        })}
+        <br />
+        {intl.formatMessage({
+          id: 'profileContent3',
+        })}
       </div>
     </div>
   );
