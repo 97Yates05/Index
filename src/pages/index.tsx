@@ -179,6 +179,10 @@ export default () => {
           />
         </svg>
       </div>
+      <div className={styles.footer}>
+        <span>Copyright © 2021 杨晨辉的小站 </span>
+        <span> 津ICP备17008554号-1</span>
+      </div>
       <div
         className={styles.drawer}
         style={{ width: `${isOpen ? '100%' : '0'}` }}
