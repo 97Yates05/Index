@@ -25,6 +25,11 @@ export default () => {
         </li>
         <li>
           {intl.formatMessage({
+            id: 'skillItem2',
+          })}
+        </li>
+        <li>
+          {intl.formatMessage({
             id: 'skillItem3',
           })}
         </li>
@@ -71,11 +76,6 @@ export default () => {
         <li>
           {intl.formatMessage({
             id: 'skillItem12',
-          })}
-        </li>
-        <li>
-          {intl.formatMessage({
-            id: 'skillItem13',
           })}
         </li>
       </ul>
