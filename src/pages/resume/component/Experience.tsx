@@ -36,9 +36,6 @@ export default () => {
           </div>
         </div>
         <div style={{ marginTop: 10 }}>
-          {intl.formatMessage({
-            id: 'bytedanceProfile',
-          })}
           <ul style={{ paddingInlineStart: 20 }}>
             <li>
               {intl.formatMessage({
@@ -53,6 +50,11 @@ export default () => {
             <li>
               {intl.formatMessage({
                 id: 'bytedanceContent3',
+              })}
+            </li>
+            <li>
+              {intl.formatMessage({
+                id: 'bytedanceContent4',
               })}
             </li>
           </ul>
@@ -76,9 +78,6 @@ export default () => {
           </div>
         </div>
         <div style={{ marginTop: 10 }}>
-          {intl.formatMessage({
-            id: 'valueSystemProfile',
-          })}
           <ul style={{ paddingInlineStart: 20 }}>
             <li>
               {intl.formatMessage({
@@ -112,9 +111,6 @@ export default () => {
           </div>
         </div>
         <div style={{ marginTop: 10 }}>
-          {intl.formatMessage({
-            id: 'personProjectProfile',
-          })}
           <ul style={{ paddingInlineStart: 20 }}>
             <li>
               {intl.formatMessage({
@@ -125,10 +121,26 @@ export default () => {
               {intl.formatMessage({
                 id: 'personProjectContent2',
               })}
-              ：
-              <a href="https://github.com/97Yates05/Music">
-                https://github.com/97Yates05/Music
-              </a>
+            </li>
+            <li>
+              {intl.formatMessage({
+                id: 'personProjectContent3',
+              })}
+            </li>
+            <li>
+              {intl.formatMessage({
+                id: 'personProjectContent4',
+              })}
+            </li>
+            <li>
+              {intl.formatMessage({
+                id: 'personProjectContent5',
+              })}
+            </li>
+            <li>
+              {intl.formatMessage({
+                id: 'personProjectContent6',
+              })}
             </li>
           </ul>
         </div>

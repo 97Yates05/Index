@@ -68,16 +68,6 @@ export default () => {
             id: 'skillItem10',
           })}
         </li>
-        <li>
-          {intl.formatMessage({
-            id: 'skillItem11',
-          })}
-        </li>
-        <li>
-          {intl.formatMessage({
-            id: 'skillItem12',
-          })}
-        </li>
       </ul>
       <div>
         <svg className="icon" aria-hidden="true" style={{ fontSize: 18 }}>

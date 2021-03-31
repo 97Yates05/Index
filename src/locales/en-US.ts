@@ -24,15 +24,13 @@ export default {
   skillItem1: 'JS, React(proficiency)',
   skillItem2: 'Computer Network(Familiar)',
   skillItem3: 'TypeScript, Node.js(Familiar)',
-  skillItem4: 'antd, element-ui(Familiar)',
-  skillItem5: 'HTML, CSS(Familiar)',
-  skillItem6: 'Common build tools(Know)',
-  skillItem7: 'Common Algorithms(Know)',
-  skillItem8: 'Graphql, Dgraph(Used)',
-  skillItem9: 'Docker, Jenkins(Used)',
-  skillItem10: 'FWWB(The Second Prize)',
-  skillItem11: 'CET-4, CET-6',
-  skillItem12: 'Outstanding Volunteer',
+  skillItem4: 'Common build tools(Know)',
+  skillItem5: 'Common Algorithms(Know)',
+  skillItem6: 'Graphql, Dgraph(Used)',
+  skillItem7: 'Docker, Jenkins(Used)',
+  skillItem8: 'FWWB(The Second Prize)',
+  skillItem9: 'CET-4, CET-6',
+  skillItem10: 'Outstanding Volunteer',
 
   personalWebsite: 'PERSONALWEBSITE',
   home: 'HomePage',
@@ -42,27 +40,32 @@ export default {
   experience: 'EXPERIENCE',
   bytedanceName: 'ByteDance(Internship)',
   bytedanceTime: '2020/10 - 2020/12',
-  bytedanceProfile:
-    'Mainly responsible for iteratting daily business, about Vendor system, OMS, Data platform, App Embed and mini program.',
   bytedanceContent1:
-    'Complete development requirements for the React project，including coding, interface negotiation, self-test, code review, flow verification and launching product;',
+    'Use DevOps development model to optimize the user experience of related systems;',
   bytedanceContent2:
     'Based on the ECharts visualization library, solve the problem of code duplication and unreusable, complete the encapsulation of common components;',
   bytedanceContent3:
-    'Participate in requirements review, process technology sharing in weekly meeting;',
+    'Participate in the development of the BFF layer of the data platform, Node.js combined with the rpc service framework Thrift;',
+  bytedanceContent4:
+    'Solved the time-consuming problem of exporting big data to Excel, from a few minutes to ten seconds;',
   valueSystemName: 'ValuationSystem(InstituteProject)',
   valueSystemTime: '2021/1 - 2021/3',
-  valueSystemProfile:
-    'Mainly Responsible for assigning development tasks, demand analysis and technical guidance.',
   valueSystemContent1:
-    "Complete the development requirements of the industrial chain genealogy,using AnTV's X6 graph editing engine, solved the problem of diagram presentation.",
+    "Adopt AntV's X6 graph editing engine, use data to build a knowledge graph of the industry chain, and provide front-end custom construction capabilities",
   valueSystemContent2:
     'Using EOLINKER to manage project interfaces，Schedule iterations,demand and track progress with cloud effects;',
-  personProjectName: 'WebMusic(PersonalProject)',
+  personProjectName: 'PersonalWebsite',
   personProjectTime: '2020/2 - 2020/3',
-  personProjectProfile:
-    'Mainly responsible for the design and layout of the page and the implementation of interactive logic',
   personProjectContent1:
-    'Based on the api of netease cloud，realized the search and play of music, see the mv,private FM,historical play,personal homepage and soon;',
-  personProjectContent2: 'GitHub',
+    'The master station uses Anime.js animation library to realize svg loop animation;',
+  personProjectContent2:
+    "The main site uses umi's international plug-in, which supports the English version of the resume page;",
+  personProjectContent3:
+    'The blog is built using Next.js to implement common requirements such as routing jumps and code splitting;',
+  personProjectContent4:
+    'The blog uses Apollo Client to bind GraphQL queries to React components to solve data request and management issues;',
+  personProjectContent5:
+    'The blog uses the tailwindcss atomization scheme, which avoids the problem of global class name pollution and realizes rapid development',
+  personProjectContent6:
+    'All projects use Jenkins to realize the automation of construction and deployment. The infrastructure is deployed on the local machine using docker containers, and the external network is penetrated through the Alibaba Cloud server to provide domain name access capabilities.',
 };
