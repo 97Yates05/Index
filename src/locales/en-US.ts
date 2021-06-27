@@ -66,6 +66,4 @@ export default {
     'The blog uses Apollo Client to bind GraphQL queries to React components to solve data request and management issues;',
   personProjectContent5:
     'The blog uses the tailwindcss atomization scheme, which avoids the problem of global class name pollution and realizes rapid development',
-  personProjectContent6:
-    'All projects use Jenkins to realize the automation of construction and deployment. The infrastructure is deployed on the local machine using docker containers, and the external network is penetrated through the Alibaba Cloud server to provide domain name access capabilities.',
 };

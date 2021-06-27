@@ -21,6 +21,43 @@ export default () => {
         <div className={styles.title}>
           <div>
             <svg className="icon" aria-hidden="true">
+              <use href="#icon-tencent" />
+            </svg>
+            <span className="font" style={{ marginLeft: 10 }}>
+              {intl.formatMessage({
+                id: 'tencentName',
+              })}
+            </span>
+          </div>
+          <div className={`font ${styles.time}`}>
+            {intl.formatMessage({
+              id: 'tencentTime',
+            })}
+          </div>
+        </div>
+        <div style={{ marginTop: 10 }}>
+          <ul style={{ paddingInlineStart: 20 }}>
+            <li>
+              {intl.formatMessage({
+                id: 'tencentContent1',
+              })}
+            </li>
+            <li>
+              {intl.formatMessage({
+                id: 'tencentContent2',
+              })}
+            </li>
+            <li>
+              {intl.formatMessage({
+                id: 'tencentContent3',
+              })}
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <div className={styles.title}>
+          <div>
+            <svg className="icon" aria-hidden="true">
               <use href="#icon-byte" />
             </svg>
             <span className="font" style={{ marginLeft: 10 }}>
@@ -135,11 +172,6 @@ export default () => {
             <li>
               {intl.formatMessage({
                 id: 'personProjectContent5',
-              })}
-            </li>
-            <li>
-              {intl.formatMessage({
-                id: 'personProjectContent6',
               })}
             </li>
           </ul>
